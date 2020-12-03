@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             xhr.open('POST', API_DOMAIN + REGISTER_API_URL);
-            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
             xhr.send(loginObjectJson);
         }
     }
