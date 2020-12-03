@@ -1,4 +1,4 @@
-var API_DOMAIN = 'http://2-dot-backup-sever-002-appspot.com';
+var API_DOMAIN = 'https://2-dot-backup-sever-002-appspot.com';
 var REGISTER_API_URL = '/_api/v2/members/authentication';
 //lấy ra biến token trong local storagel.
 var token = localStorage.getItem('song-i-like-token');
