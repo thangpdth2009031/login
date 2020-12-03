@@ -20,13 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 'email': txtEmail.value,
                 'password': pwdPassword.value
             }
-            console.log(loginObject);
+
             //prepare du lieu truoc khi gui.
             var loginObjectJson = JSON.stringify(loginObject);
 
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
-                if (this.responseStart == 4) {
+                console.log(this.readyState);
+                if (this.readyState == 4) {
                     if (this.status == 201) {
                         alert('Login thanh cong');
                         var responseJsonObject = JSON.parse(this.responseText);
