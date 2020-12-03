@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
-                console.log(this.readyState);
+
                 if (this.readyState == 4) {
+                    console.log(this.status);
                     if (this.status == 201) {
                         alert('Login thanh cong');
                         var responseJsonObject = JSON.parse(this.responseText);
