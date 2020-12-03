@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             }
-            xhr.open('POST', API_DOMAIN + REGISTER_API_URL);
-            xhr.setRequestHeader('Content-type', "application/x-www-form-urlencoded");
+            xhr.open('POST', API_DOMAIN + REGISTER_API_URL, true);
+            xhr.setRequestHeader('Content-type', 'application/json');
             xhr.send(loginObjectJson);
         }
     }
